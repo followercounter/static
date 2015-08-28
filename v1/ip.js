@@ -7,7 +7,7 @@ window.followercounter.ip = {
         this.link.innerHTML = object.ip;
     },
     init: function () {
-        var base_url = "http://localhost:8000/v1";
+        var base_url = "https://followercounter.github.io/static/v1";
         this.link = document.createElement("a");
         this.link.href = "http://followercounter.co/";
         this.link.setAttribute("target", "_blank");
