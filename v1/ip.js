@@ -1,5 +1,5 @@
 function fc_feature_ip() {
-    var base_url = "https://followercounter.github.io/static";
+    var base_url = "https://followercounter.github.io/static/v1";
     var ip_address = document.createElement("a");
     ip_address.href = "http://followercounter.co/";
     ip_address.setAttribute("target", "_blank");
