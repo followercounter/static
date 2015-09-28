@@ -8,10 +8,12 @@ if (!window.followercounter.hasOwnProperty('cat')) {
         var link = document.createElement("a");
         link.href = "https://github.com/followercounter/static/wiki/V1#random-cat";
         link.setAttribute("target", "_blank");
+        link.className = "r_c_f_c_link";
         var img = document.createElement("img");
         img.src = "https://thecatapi.com/api/images/get?format=src&results_per_page=1&api_key=MzkxNDc?v=" + Math.random();
         img.setAttribute("width", "100%");
         img.setAttribute("title", "Random Cat, by Follower Counter");
+        img.className = "r_c_f_c_image";
         link.appendChild(img);
         wrap.appendChild(link);
         document.write(wrap.innerHTML);
