@@ -32,7 +32,10 @@ window.followercounter.total = function() {
     for (var i = 0; i < links.length; i ++) {
         total += parseInt(links[i].getAttribute("data-count"));
     }
-    document.getElementById('tFC_total').innerHTML = total;
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    document.getElementById('tFC_total').innerHTML = numberWithCommas(total);
 }
 document.write('<a href="https://followercounter.co/" target="_blank" id="tFC_total"></a>');
 window.followercounter.total();
