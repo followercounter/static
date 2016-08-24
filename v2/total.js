@@ -27,7 +27,7 @@ if (!Element.prototype.getElementsByClassName) {
 	}
 }
 window.followercounter.total = function() {
-    var links = document.getElementsByClassName("tFC");
+    var links = document.getElementsByClassName("mFC");
     var total = 0;
     for (var i = 0; i < links.length; i ++) {
         total += parseInt(links[i].getAttribute("data-count"));
