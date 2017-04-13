@@ -1,0 +1,10 @@
+{
+	"notifications": [
+		{
+			"link": "oauth/codes",
+			"name": "new-codes",
+			"text": "Generate follower count codes and more!",
+			"type": "new"
+		}
+	]
+}
